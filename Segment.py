@@ -72,16 +72,16 @@ def plot_results(img, obj):
     plt.xlabel('Feature Index')
     plt.ylabel('Feature Value')
     plt.colorbar(label='Cluster Label')
-    plt.show()
-    plt.savefig(f"{save_directory}/{id}.png")
+    #plt.show()
+    plt.savefig(f"{save_directory}/{id}b.png")
 
 if __name__ == '__main__':
     
-    mp3filepath = sys.argv[1]
+    filepath = sys.argv[1]
     save_directory = sys.argv[2]
     id = sys.argv[3]
 
-    x, sr = librosa.load(mp3filepath)
+    x, sr = librosa.load(filepath)
     x = x[int(len(x)/4):]
     hop_length = 1024
     image = spectrogram_image(x, sr=sr, hop_length=hop_length)
@@ -141,6 +141,7 @@ if __name__ == '__main__':
     plt.ylabel('Frequency Bin')
 
     plt.tight_layout()
-    plt.show()
+    #plt.show()
+    plt.savefig(f"{save_directory}/{id}.png")
     
-    plot_results(segmented_image, kmeans)
+    #plot_results(segmented_image, kmeans)
