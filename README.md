@@ -1,4 +1,4 @@
-# electric-motors-fault-detector
+# Electric motors fault detector
 
 Exploration of different deep learning models for detecting abnormal sound signals from electric motors.
 
