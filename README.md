@@ -20,4 +20,4 @@ Exploration of different deep learning models for detecting abnormal sound signa
 
 ## Graphs
 
-[](Graphs\Architecture.py) generates a visualization of the model layers, [](Graphs\Epoch_graphs.py) shows the evolution of accuracy and loss that was logged in the .csv files, [](Graphs\Matrix_graphs.py) create confusion matrix for every .keras model and [](Graphs\Test_graphs.py) create comparision graphs of all models using  f1-score, accuracy and precision.
+[Architecture.py](Graphs\Architecture.py) generates a visualization of the model layers, [Epoch_graphs.py](Graphs\Epoch_graphs.py) shows the evolution of accuracy and loss that was logged in the .csv files, [Matrix_graphs.py](Graphs\Matrix_graphs.py) create confusion matrix for every .keras model and [Test_graphs.py](Graphs\Test_graphs.py) create comparision graphs of all models using f1-score, accuracy and precision.
