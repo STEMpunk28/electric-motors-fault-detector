@@ -14,7 +14,7 @@ Exploration of different deep learning models for detecting abnormal sound signa
 
 + [MobileNetV2_transfer.py](Training/MobileNetV2_transfer.py) is an implementation of [TensorFlow fine-tuning tutorial](https://www.tensorflow.org/tutorials/images/transfer_learning) to use as an accuracy base for comparisions.
 
-+ [CCN_training.py](Training\CNN_training.py), [LSTM_training.py](Training\LSTM_training.py), [BiLSTM_training.py](Training\BiLSTM_training.py), [CNN_LSTM_training.py](Training\CNN_LSTM_training.py) and [CNN_BiLSTM_training.py](Training/CNN_BiLSTM_training.py) models all work the same way, outputting the best weights into a .keras file and a .csv with the evolition of accuraccy and loss.
++ [CCN_training.py](Training\CNN_training.py), [LSTM_training.py](Training\LSTM_training.py), [BiLSTM_training.py](Training\BiLSTM_training.py), [CNN_LSTM_training.py](Training\CNN_LSTM_training.py) and [CNN_BiLSTM_training.py](Training/CNN_BiLSTM_training.py) models all work the same way, outputting the best weights into a .keras file and a .csv with the evolution of accuraccy and loss.
 
 + [Transformer_training.py](Training\Transformer_training.py) is an exploration using ViT transformers using PyTorch, not included on the main exploration for a lack of hardware and time.
 
