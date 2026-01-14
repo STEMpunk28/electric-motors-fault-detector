@@ -26,6 +26,7 @@ test_ds = tf.keras.utils.image_dataset_from_directory(
     TEST_DIR,
     labels='inferred',
     label_mode='binary',
+    class_names=["normal", "abnormal"],
     batch_size=BATCH_SIZE,
     image_size=IMG_SIZE,
     shuffle=False

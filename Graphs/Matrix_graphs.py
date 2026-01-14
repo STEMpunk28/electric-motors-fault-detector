@@ -24,6 +24,7 @@ test_ds = tf.keras.utils.image_dataset_from_directory(
     TEST_DIR,
     labels="inferred",
     label_mode="binary",
+    class_names=["normal", "abnormal"],
     batch_size=BATCH_SIZE,
     image_size=IMG_SIZE,
     shuffle=False
@@ -60,7 +61,7 @@ def plot_confusion_matrix(y_true, y_pred, model_name):
 
     disp = ConfusionMatrixDisplay(
         confusion_matrix=cm,
-        display_labels=["Abnormal", "Normal"]
+        display_labels=["Normal", "Abnormal"]
     )
 
     fig, ax = plt.subplots(figsize=(5, 5))

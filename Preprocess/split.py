@@ -2,7 +2,7 @@ import os
 import shutil
 import random
 
-def split_dataset(input_dir, output_dir, train_ratio=0.6, val_ratio=0.2, test_ratio=0.2, seed=42):
+def split_dataset(input_dir, output_dir, train_ratio=0.6, val_ratio=0.2, seed=42):
     random.seed(seed)
 
     # Get all files
@@ -42,6 +42,6 @@ def split_dataset(input_dir, output_dir, train_ratio=0.6, val_ratio=0.2, test_ra
 
 # Example usage
 if __name__ == "__main__":
-    input_folder = "D:/TrainingSet/Abnormal"
-    output_folder = "D:/TrainingSet/Abnormal"
+    input_folder = "" # specify your input folder path here
+    output_folder = "" # specify your output folder path here
     split_dataset(input_folder, output_folder)
